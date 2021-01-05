@@ -30,8 +30,9 @@ sourceCompatibility = 1.8
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('org.projectlombok:lombok')
 
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
 //    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }
