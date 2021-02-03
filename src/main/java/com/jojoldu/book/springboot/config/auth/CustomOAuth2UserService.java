@@ -42,7 +42,6 @@ implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
                 userNameAttributeName, oAuth2User.getAttributes());
         User user = saveOrUpdate(attributes);
 
-        System.out.println("&&&&&&&&&&&&&&"+user.getName());
         httpSession.setAttribute("user",new SessionUser(user));
 
         return new DefaultOAuth2User(
